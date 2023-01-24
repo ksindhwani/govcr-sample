@@ -11,8 +11,12 @@ import (
 	"github.com/seborama/govcr/v13"
 )
 
-type RestaurantCompanyContactResponse struct {
+type Response struct {
+	/** Fill in the fields for the response struct which you want to fetch from API response
+	For example
 	Email string `json:"email"`
+
+	**/
 }
 
 func main() {
@@ -24,8 +28,8 @@ func main() {
 		govcr.WithRequestMatchers(govcr.NewMethodURLRequestMatchers()...),
 	)
 
-	url := "https://test.deliveroo.co.uk/api/internal/restaurant_companies/f5f2fd56-e8c5-4c56-a762-49033b655bb9"
-	req, err := http.NewRequest("GET", url, nil)
+	url := "<Api url>"
+	req, err := http.NewRequest("<Request Method>", url, nil)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
@@ -39,7 +43,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
-	var response RestaurantCompanyContactResponse
+	var response Response
 	if err := json.Unmarshal(bodyText, &response); err != nil {
 		fmt.Println(err.Error())
 	}
