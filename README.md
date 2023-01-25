@@ -17,6 +17,6 @@
   * <b> Api url </b> - API url to hit 
   * <b> Request Method </b> - Http Request Method 
   * <b> basic auth username </b> - Basic Auth Username - We use Basic Authentication in the API.
-  * <b> <basic auth password </b> - Basic Auth Password
+  * <b> basic auth password </b> - Basic Auth Password
   
 * Run the command `go run main.go`. This will call actual api first time and then create a Cassette `MyCassette1.json` and then for subsequent call they will use that Cassette.
