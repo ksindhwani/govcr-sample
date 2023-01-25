@@ -14,7 +14,7 @@
 <h3> Setup </h3>
 
 * Fill the following fields in `main.go` file 
-  * <b> Api url /b> - API url to hit 
+  * <b> Api url </b> - API url to hit 
   * <b> Request Method </b> - Http Request Method 
   * <b> basic auth username </b> - Basic Auth Username - We use Basic Authentication in the API.
   * <b> <basic auth password </b> - Basic Auth Password
